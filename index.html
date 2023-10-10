@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eToro</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    
+</head>
+<body>
+    <div class="menu">
+      <div class="open-btn">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+      <div class="close-btn">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+    </div>
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+              <span><img src="img/logo.png" alt=""></span>
+                <ion-icon id="cloud" name="menu-outline"></ion-icon>
+            </div>
+            <div class="usuario">
+              <img src="img/co.png" alt="">
+              <div class="info-usuario">
+                  <div class="nombre-email">
+                      <span class="nombre">Jhampier</span>
+                      <a data-modal-target="#modal" class="email">Editar Perfil</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <nav class="navegacion">
+            <ul>
+              <li>
+                <li class="main-items">
+                  <a  href="#">
+                    <span  class="main-item">Inicio</span>
+                  </a>
+                </li>
+                <li>
+                  <a data-modal-target="#modal" href="#">
+                    <span class="main-item">Perfil</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="main-item">Portafolio</span>
+                  </a>
+                </li>
+              </li>
+              <li>
+                    <span class="more">Más</span>
+            </li>
+                <li>
+                    <a href="#">
+                        <span>
+                          <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span>Configuraciones</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div>
+            <span data-modal-target="#modal2" class="linea">Depositar mi dinero</span>
+            <span>
+
+              <button class="boton">
+                <span data-modal-target="#modal3">Retirar mi dinero</span>
+              </button>
+              <button class="boton boton__cerrar">
+                <span>Cerrar sesión</span>
+              </button>
+            </span>
+              
+                
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+                            
+                        </div>
+                    </div>
+                </div>
+    
+            
+        </div>
+
+    </div>
+    <main>
+      <div class="slider">
+	<div class="slide-track">
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="" height="90" width="250" alt="" />
+		</div>
+	</div>
+      </div>
+        <div id="slider-verify">
+          <input type="radio" name="slider" id="slide1" >
+          <input type="radio" name="slider" id="slide2" checked>
+          <div id="slides">
+             <div id="overflow">
+                <div class="inner">
+
+                   <div class="slide slide_1">
+                      <div class="slide-content content_text">
+
+                        <div class="bullets-container" id="bullets">
+                          <p class="bullet" ><label class="bullet" for="slide1"></label>Verificar cuenta.</p>
+                          <div id="bullets">
+                            <p class="seleccionado bullet"><label class="bullet" for="slide2"></label>Depositar fondos</p>
+                          </div>
+                        </div>
+
+                        <div class="text-verify">
+                          <h1>¡Bienvenido a eToro!</h1>
+                          <p>Verifique su cuenta</p>
+                        </div>
+
+                        <button data-modal-target="#modal" class="slider-button" >Verificar</button>
+                      </div>
+                      <div class="slide-content">
+                        <div class="verify-img"></div>
+                      </div>
+                    </div>
+                   
+                    <div class="slide slide_2">
+                      <div class="slide-content content_text">
+
+                        <div class="bullets-container" id="bullets">
+                          <p class="seleccionado bullet" ><label class="bullet" for="slide1"></label>Verificar cuenta</p>
+                          <div id="bullets">
+                          <p class="bullet" ><label class="bullet" for="slide2"></label>Depositar fondos</p>
+                        </div>
+                        </div>
+
+                        <div class="text-verify">
+                          <h1>¡Bienvenido a eToro!</h1>
+                          <p>Deposita tus fondos.</p>
+                        </div>
+
+                        <button data-modal-target="#modal2" class="slider-button">Depositar</button>
+                      </div>
+                      <div class="slide-content">
+                        <div class="verify-img"></div>
+                      </div>
+
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+
+        <div class="modal modal-profile" id="modal">
+          <div class="modal-header modal-header_profile">
+            <div class="title">Su perfil</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <p class="perfil-header__p">Los datos personales deberían coincidir con los de su documento de identidad o pasaporte.</p>
+          <div class="modal-body profile">
+            <div class="img-profile_container"><img src="/img/co.png" alt=""></div>
+            <div class="profile-form_container">
+              <form class="profile-form" method="post" class="form">
+                <div class="profile-form_name">
+                  <label class="label-title" for="name">Nombre</label>
+                  <div class="label-name">
+                    <input placeholder="Nombre" class="short-input mr-6" type="text" id="name"  name="name" required>
+                    <input placeholder="Segundo Nombre" class="short-input" type="text" id="name"  name="name2">
+                    <input placeholder="Apellidos" class="long-input" type="text" id="name"  name="lastName" required>
+                  </div>
+               </div>
+               <div class="profile-form_gender">
+                 <label class="label-title" for="genero1 genero2">Género</label>
+                 <div class="checkbox-gender_container">
+                   <input class="checkbox-gender" type="radio" id="genero1"  name="genero" required>
+                   <label for="genero1" class="short-input gender">Masculino</label>
+                   <input class="checkbox-gender" type="radio" id="genero2"  name="genero" required>
+                   <label for="genero2" class="short-input gender">Femenino</label>
+                  </div>
+                </div>
+                <div class="profile-form_birthday">
+                  <label class="label-title" for="">Cumpleaños</label>
+                  <div class="input-birthday_container">
+                    <input maxlength="2" class="xShort-input" type="number" name="day" id="day" placeholder="dd" required>
+                    <input class="xShort-input" type="number" name="mes" id="mm" placeholder="mm" required>
+                    <input class="xShort-input" type="number" name="año" id="aaaa" placeholder="aaaa" required>
+                  </div>
+                </div>
+                
+            </form>
+            <div class="btn-container">
+              <button data-close-button class="btn-success">Finalizar</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div id="overlay"></div>
+
+        <div class="modal modal-deposit" id="modal2">
+          <div class="modal-header">
+            <div class="title">Deposite fondos en su cuenta</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body_deposit">
+              <div class="deposit-amount">
+                <select name="" id="">
+                  <div class="divisa-options">
+                    <option class="divisa-option" value="">USD</option>
+                    <option class="divisa-option" value="">EUR</option>
+                    <option class="divisa-option" value="">GBP</option>
+                    <option class="divisa-option" value="">AUD</option>
+                  </div>
+                </select>
+                <div >
+                  <span class="symbol-container">$</span>
+                  <input type="number" name="" id="" >
+                </div>
+              </div>
+              <div class="card-selector">
+                <select class="card-opt" name="cards" id="">
+                  <option value="debitoCredito">Tarjeta de débito/crédito</option>
+                </select>
+              </div>
+              <div class="card-info">
+                <div class="card-number">
+                  <input type="number" name="" id="" placeholder="Numero de tarjeta">
+                  <input maxlength="4" type="number" name="" id="" placeholder="MM/AA">
+                  <input type="number" name="" id="" placeholder="CVV">
+                </div>
+                <div class="card-name">
+                  <input type="text" name="" id="" placeholder="Nombres">
+                  <input type="text" name="" id="" placeholder="Apellidos">
+                </div>
+              </div>
+              <span><b>Nota:</b> Esta tarjeta debe petenecerle y estar a su nombre</span>
+          </div>
+          <div class="modal-footer_deposit">
+            <button class="btn-success">Depósito</button>
+          </div>
+        </div>
+        <div id="overlay"></div>
+
+        <div class="modal" id="modal3">
+          <div class="modal-header">
+            <div class="title">Retirar</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-content">
+            <div class="modal-body_text">
+              Lo sentimos, pero su cuenta no tiene fondos suficientes para retirar. Para obtener más información y desglose, póngase en contacto con atención al cliente.
+            </div>
+            <div class="modal-body founds">
+              <div class="founds-row first">
+                <div class="founds-title">Comisión</div>
+                <div class="founds-amount">$0.00</div>
+              </div>
+              <div class="founds-row">
+                <div class="founds-title">Fondos disponibles para retirar</div>
+                <div class="founds-amount">$0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button data-close-button class="btn-success">Entiendo</button>
+          </div>
+          
+        </div>
+        <div id="overlay"></div>
+
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
