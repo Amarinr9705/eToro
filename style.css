@@ -59,7 +59,7 @@ body {
   height: 100%;
   overflow: hidden;
   padding: 20px 20px;
-  background: linear-gradient(to bottom, #394058, rgba(38, 43, 59));
+  background: linear-gradient(to bottom, rgb(57, 64, 88), rgba(38, 43, 59));
   transition: width 0.5s ease, background-color 0.3s ease, left 0.5s ease;
   z-index: 50;
 }
@@ -92,7 +92,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row-reverse;
 }
 .barra-lateral .nombre-pagina ion-icon {
   min-width: 50px;
@@ -311,7 +310,7 @@ main.min-main {
 
 #slider-verify {
   margin: 0 auto;
-  width: 1000px;
+  width: 1080px;
   max-width: 100%;
   text-align: center;
 }
@@ -440,6 +439,7 @@ main.min-main {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+  flex-direction: column;
 }
 
 .seleccionado {
@@ -497,9 +497,32 @@ main.min-main {
   display: none;
 }
 
-@media screen and (max-width: 430px) {
+
+@media screen and (max-width: 250px) {
+  .text-verify h1 {
+    white-space: normal;
+  }
+}
+@media screen and (max-width: 768px){
+  .verify-img{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    right: -15px;
+    bottom: -50px;
+  }
+  .slider-button{
+    display: none;
+  }
+  #slides{
+    padding: 0 0;
+  }
+  #slides .inner{
+    height: 250px;
+  }
   .content_text {
     margin-left: 15px;
+    flex-direction: column-reverse;
   }
   .text-verify h1{
     font-size: 21px;
@@ -513,14 +536,10 @@ main.min-main {
   .bullets-container{
     flex-direction: column;
   }
-  .verify-img{
-    width: 200px;
-    height: 200px;
-  }
 }
-@media screen and (max-width: 250px) {
-  .text-verify h1 {
-    white-space: normal;
+@media screen and (max-width: 424px) {
+  .verify-img{
+    right: 90px;
   }
 }
 @media screen and (max-width: 330px) {
