@@ -498,6 +498,15 @@ main.min-main {
 }
 
 
+/*----Barras---*/
+
+.barras{
+  padding-left: 2rem;
+}
+
+
+
+
 @media screen and (max-width: 250px) {
   .text-verify h1 {
     white-space: normal;
