@@ -431,7 +431,7 @@ main.min-main {
 .verify-img {
   width: 500px;
   height: 500px;
-  background-image: url("/img/verify.png");
+  background-image: url("public/img/verify.png");
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -842,6 +842,9 @@ input[type="radio"]:checked + label {
   .content_text {
     margin-left: 15px;
     flex-direction: column-reverse;
+  }
+  .search{
+    text-align: center;
   }
   .text-verify h1{
     font-size: 21px;
