@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eToro</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="icon" type="image/png" href="./public/img/favicon.png"/>
     
 </head>
 <body>
@@ -37,7 +37,7 @@
             <ul>
               <li>
                 <li class="main-items">
-                  <a  href="#">
+                  <a  href="/index.html">
                     <span  class="main-item">Inicio</span>
                   </a>
                 </li>
@@ -47,7 +47,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/portafolio.html">
                     <span class="main-item">Portafolio</span>
                   </a>
                 </li>
@@ -55,15 +55,31 @@
               <li>
                     <span class="more">Más</span>
             </li>
-                <li>
-                    <a href="#">
+                  <li>
+                    <a href="/configuraciones.html">
                         <span>
                           <ion-icon name="settings-outline"></ion-icon>
                         </span>
-                        <span>Configuraciones</span>
+                        <span>Calendario Ecónomico</span>
                     </a>
                 </li>
-
+                <li>
+                    <a href="/configuraciones.html">
+                        <span>
+                          <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span>Club e Toro</span>
+                    </a>
+                </li>
+                <li> 
+                  <a href="/configuraciones.html">
+                    <span>
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                    <span>Configuraciones</span>
+                  </a>
+                </li>
+    
             </ul>
         </nav>
 
@@ -93,52 +109,50 @@
 
     </div>
     <main>
+      <form  class="search" action="/ruta-de-busqueda" method="get">
+        <input type="search" id="search" name="search" placeholder="Buscar">
+      </form>
       <div class="slider">
-	<div class="slide-track">
-
-		<div class="slide">
-			<img src="./public/img/slider1.png" height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider2.png" height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider3.png" height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider4.png" height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider5.png" height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider6.png" height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider7.pngg" height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider1.png"  height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider2.png" height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider3.png" height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider4.png" height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider5.png" height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider6.png " height="90" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./public/img/slider7.png" height="90" width="250" alt="" />
-		</div>
-		
+        <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+              {
+              "symbols" : [
+                {
+                  "proName": "FOREXCOM:SPXUSD",
+                  "title": "S&P 500"
+                },
+                {
+                  "proName": "FOREXCOM:NSXUSD",
+                  "title": "US 100"
+                },
+                {
+                  "proName": "FX_IDC:EURUSD",
+                  "title": "EUR a USD"
+                },
+                {
+                  "proName": "BITSTAMP:BTCUSD",
+                  "title": "Bitcoin"
+                },
+                {
+                  "proName": "BITSTAMP:ETHUSD",
+                  "title": "Ethereum"
+                },
+                {
+                  "description": "Apple",
+                  "proName": "NASDAQ:AAPL"
+                }
+              ],
+              "showSymbolLogo": true,
+              "colorTheme": "light",
+              "isTransparent": false,
+              "displayMode": "adaptive",
+              "locale": "es";
+            }
+              </script>
+            </div>
+<!-- TradingView Widget END -->
 	</div>
       </div>
         <div id="slider-verify">
@@ -204,7 +218,7 @@
           </div>
           <p class="perfil-header__p">Los datos personales deberían coincidir con los de su documento de identidad o pasaporte.</p>
           <div class="modal-body profile">
-            <div class="img-profile_container"><img src="/img/co.png" alt=""></div>
+            <div class="img-profile_container"><img src="./public/img/co.png" alt=""></div>
             <div class="profile-form_container">
               <form class="profile-form" method="post" class="form">
                 <div class="profile-form_name">
@@ -315,30 +329,28 @@
         <section>
           <div class="barras"> 
             <div class="Barras_left">
-            <!-- TradingView Widget BEGIN -->
-            <!-- TradingView Widget BEGIN -->
-      <div class="tradingview-widget-container">
-      <div id="tradingview_fde6b"></div>
-      <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Siga los mercados en TradingView</span></a></div>
-      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-      <script type="text/javascript">
-      new TradingView.widget(
-      {
-      "width": "980",
-      "height": "610",
-      "symbol": "NASDAQ:AAPL",
-      "interval": "1",
-      "timezone": "Etc/UTC",
-      "theme": "light",
-      "style": "1",
-      "locale": "es",
-      "enable_publishing": false,
-      "allow_symbol_change": true,
-      "container_id": "tradingview_fde6b"
-    }
-      );
-      </script>
-      </div>
+              <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container" style="height:100%;width:100%">
+                <div id="tradingview_5c60f" style="height: 800px ;width:100%"></div>
+                  <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Siga los mercados en TradingView</span></a></div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                    <script type="text/javascript">
+                    new TradingView.widget(
+                        {
+                      "autosize": true,
+                      "symbol": "NASDAQ:AAPL",
+                      "interval": "D",
+                      "timezone": "Etc/UTC",
+                      "theme": "light",
+                      "style": "1",
+                      "locale": "es",
+                      "enable_publishing": false,
+                      "allow_symbol_change": true,
+                      "container_id": "tradingview_5c60f"
+                    }
+                          );
+                    </script>
+</div>
 <!-- TradingView Widget END -->
           </div>
           <div class="Barras_right">

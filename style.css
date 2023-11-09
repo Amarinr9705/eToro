@@ -171,6 +171,17 @@ body {
   font-size: 16px;
 }
 
+.search{
+  margin: 2rem;
+  text-align: center;
+}
+
+.search input{
+  width: 500px;
+  height: 30px;
+  border: none;
+}
+
 /*-----------------> Linea*/
 .barra-lateral .linea {
   width: 100%;
@@ -500,63 +511,6 @@ main.min-main {
 
 /*----Barras---*/
 
-.barras{
-  padding-left: 2rem;
-}
-
-
-
-
-@media screen and (max-width: 250px) {
-  .text-verify h1 {
-    white-space: normal;
-  }
-}
-@media screen and (max-width: 768px){
-  .verify-img{
-    position: relative;
-    width: 180px;
-    height: 180px;
-    right: -15px;
-    bottom: -50px;
-  }
-  .slider-button{
-    display: none;
-  }
-  #slides{
-    padding: 0 0;
-  }
-  #slides .inner{
-    height: 250px;
-  }
-  .content_text {
-    margin-left: 15px;
-    flex-direction: column-reverse;
-  }
-  .text-verify h1{
-    font-size: 21px;
-  }
-  .text-verify p{
-    font-size: 14px;
-  }
-  .bullet{
-    border: none;
-  }
-  .bullets-container{
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 424px) {
-  .verify-img{
-    right: 90px;
-  }
-}
-@media screen and (max-width: 330px) {
-  .barra-lateral .nombre-pagina, .barra-lateral .boton, .barra-lateral .linea {
-    width: 90vw;
-  }
-
-}
 
 
 /* Modals */
@@ -860,6 +814,69 @@ input[type="radio"]:checked + label {
 }
 .checkbox-gender_container{
   display: flex;
+}
+
+
+@media screen and (max-width: 250px) {
+  .text-verify h1 {
+    white-space: normal;
+  }
+}
+@media screen and (max-width: 768px){
+  .verify-img{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    right: -15px;
+    bottom: -50px;
+  }
+  .slider-button{
+    display: none;
+  }
+  #slides{
+    padding: 0 0;
+  }
+  #slides .inner{
+    height: 250px;
+  }
+  .content_text {
+    margin-left: 15px;
+    flex-direction: column-reverse;
+  }
+  .text-verify h1{
+    font-size: 21px;
+  }
+  .text-verify p{
+    font-size: 14px;
+  }
+  .bullet{
+    border: none;
+  }
+  .bullets-container{
+    flex-direction: column;
+  }
+
+  .slider{
+    margin-top: 3rem;
+    
+  }
+
+  .barras{
+    padding-top: 1rem;
+  }
+
+  
+}
+@media screen and (max-width: 424px) {
+  .verify-img{
+    right: 90px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .barra-lateral .nombre-pagina, .barra-lateral .boton, .barra-lateral .linea {
+    width: 90vw;
+  }
+
 }
 
 @media screen and (max-width: 700px) {
