@@ -30,6 +30,9 @@ body {
   height: 100vh;
   width: 100%;
 }
+strong{
+  font-weight: bold !important;
+}
 
 /*-----------------Menu*/
 .menu {
@@ -44,7 +47,7 @@ body {
   cursor: pointer;
   background-color: var(--color-barra-lateral);
   color: var(--color-boton-texto);
-  right: 15px;
+  left: 15px;
   top: 15px;
   z-index: 50;
 }
@@ -125,6 +128,7 @@ body {
   min-width: 50px;
   font-size: 25px;
 }
+
 
 /*--------------> Menu Navegación*/
 .barra-lateral .navegacion {
@@ -231,6 +235,13 @@ body {
 }
 .barra-lateral .usuario ion-icon {
   font-size: 20px;
+}
+
+.club-icon{
+  width: 30px;
+  height: 30px;
+  margin-left: 11px ;
+  margin-right: 10px;
 }
 
 /*-------------main*/
@@ -940,4 +951,171 @@ input[type="radio"]:checked + label {
     flex-direction: column;
   }
   
+}
+
+.etoro-club{
+  color: #fff;
+  background-color: #01034e;
+  padding: 80px 0;
+  position: relative;
+  margin: -20px -20px 0 -20px;
+}
+
+.etoro-club-light{
+  background-color: #fff;
+  color: #000021;
+}
+.club-info{
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  padding: 0 calc(min(144px,(100vw - 576px)/24*4) + 108px); 
+  width: 100%;
+}
+
+.club-info_precios{
+  flex-wrap: wrap;
+}
+
+.club-column{
+  width: 50%;
+  flex-basis: 50%;
+}
+
+.club-img{
+  width: 100%;
+  border-radius: 4px;
+  vertical-align: middle;
+  border: none;
+}
+
+.club-title{
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.club-content{
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.club-socio{
+  text-align: center;
+}
+.club-socio p{
+  margin-bottom: 18px;
+}
+
+.precios{
+  margin: 0 auto;
+  max-width: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.valor-img{
+  margin: 0 5px;
+}
+.valor-img img{
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .etoro-club{
+    padding-top: 10px;
+  }
+  .club-info{
+    flex-direction: column;
+  }
+  .club-column{
+    width: 100%;
+  }
+  .club-info{
+    padding: 0 16px;
+  }
+  .club-socio{
+    padding: 35px 0 40px;
+  }
+  .precios{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.table-responsive td, th, tr, .content-table{
+  background-color: #01034e !important;
+  color: #fff !important;
+  border-collapse: collapse;
+}
+.content-table tr{
+  border-bottom: 1px solid #2e2c43;
+}
+.content-table{
+  padding: 40px calc(min(144px,(100vw - 576px)/24*4) + 108px); 
+  margin: 0 -20px -20px -20px ;
+  text-align: center;
+}
+.content-table td:first-of-type{
+  width: 33%;
+  text-align: left;
+}
+.content-table th:first-of-type{
+  text-align: left;
+  width: 33%;
+
+}
+.content-table h1{
+   font-size: 32px;
+   padding: 20px 0px 60px;
+}
+.content-table th, td{
+  background-color: #02032f !important;
+  padding: 20px !important;
+  font-size: clamp(14px,1.1vw,20px) !important;
+  line-height: clamp(20px,1.3vw,26px) !important;
+}
+.checked{
+  content: "";
+  background-image: url(/img/check.svg);
+  background-size: contain;
+  background-color: unset;
+  position: absolute;
+  width: 14px;
+  height: 9px;
+}
+.content-table p{
+  font-size: 14px;
+  line-height: 20px;
+  margin: 40px 0 0;
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .content-table{
+    padding: 20px 0 40px;
+    padding-left: 5px;
+  }
+  .content-table th{
+    background-color: #01034e !important;
+  }
+  .content-table p{
+    padding: 0 20px;
+  }
+  .content-table th:first-of-type, .content-table td:first-of-type{
+    border-bottom: 1px solid #66667a;
+  }  
+  .content-table td:first-of-type, th:first-of-type{
+    max-width: 150px !important;
+    background-color: #02032f !important;
+    position: sticky;
+    left: 0;
+    z-index: 8;
+    padding: 25px 35px 20px 20px !important;
+  }
+  .content-table h1{
+    text-align: left;
+    padding-left: 20px;
+  }
 }

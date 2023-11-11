@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club eToro</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menu">
+      <div class="open-btn">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+      <div class="close-btn">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+    </div>
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+              <span><img src="./public/img/logo.png" alt=""></span>
+                <ion-icon id="cloud" name="menu-outline"></ion-icon>
+            </div>
+            <div class="usuario">
+              <img src="./public/img/co.png" alt="">
+              <div class="info-usuario">
+                  <div class="nombre-email">
+                      <span class="nombre" id="first_name">Jhampier</span>
+                      <a data-modal-target="#modal" class="email">Editar perfil</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <nav class="navegacion">
+            <ul>
+                <li>
+                  <li class="main-items">
+                    <a  href="/index.html">
+                      <span  class="main-item">Inicio</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a data-modal-target="#modal" href="#">
+                      <span class="main-item">Perfil</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/portafolio.html">
+                      <span class="main-item">Portafolio</span>
+                    </a>
+                  </li>
+                </li>
+                <li>
+                      <span class="more">Más</span>
+              </li>
+                    <li>
+                      <a href="/calendario.html">
+                          <span>
+                            <ion-icon name="calendar-clear-outline"></ion-icon>
+                          </span>
+                          <span>Calendario Ecónomico</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="/club.html">
+                          <span>
+                            <span class="club-icon_container">
+                              <img class="club-icon" src="/img/club-icon.webp" alt="">
+                            </span>
+                          </span>
+                          <span>Club eToro</span>
+                      </a>
+                  </li>
+                  <li> 
+                    <a href="/configuraciones.html">
+                      <span>
+                          <ion-icon name="settings-outline"></ion-icon>
+                      </span>
+                      <span>Configuraciones</span>
+                    </a>
+                  </li>
+              </ul>
+        </nav>
+
+        <div>
+            <span data-modal-target="#modal2" class="linea">Depositar mi dinero</span>
+            <span>
+
+              <button class="boton">
+                <span data-modal-target="#modal3">Retirar mi dinero</span>
+              </button>
+              <button class="boton boton__cerrar">
+                <span>Cerrar sesión</span>
+              </button>
+            </span>
+              
+                
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+                            
+                        </div>
+                    </div>
+                </div>
+    
+            
+        </div>
+
+    </div>
+    <main>
+        <div class="modal modal-profile" id="modal">
+          <div class="modal-header modal-header_profile">
+            <div class="title">Su perfil</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <p class="perfil-header__p">Los datos personales deberían coincidir con los de su documento de identidad o pasaporte.</p>
+          <div class="modal-body profile">
+            <div class="img-profile_container"><img src="/img/co.png" alt=""></div>
+            <div class="profile-form_container">
+              <form class="profile-form" method="post" class="form">
+                <div class="profile-form_name">
+                  <label class="label-title" id="name" for="name">Nombre</label>
+                  <div class="label-name">
+                    <input placeholder="Nombre" class="short-input mr-6" type="text" id="first_name"  name="name" required>
+                    <input placeholder="Segundo Nombre" class="short-input" type="text" id="second_name"  name="name2">
+                    <input placeholder="Apellidos" class="long-input" type="text" id="last_name"  name="lastName" required>
+                  </div>
+               </div>
+               <div class="profile-form_gender">
+                 <label class="label-title" for="genero1 genero2">Género</label>
+                 <div class="checkbox-gender_container">
+                   <input class="checkbox-gender" type="radio" id="genM"  name="genero" required>
+                   <label for="genero1" class="short-input gender">Masculino</label>
+                   <input class="checkbox-gender" type="radio" id="genF"  name="genero" required>
+                   <label for="genero2" class="short-input gender">Femenino</label>
+                  </div>
+                </div>
+                <div class="profile-form_birthday">
+                  <label class="label-title" for="">Cumpleaños</label>
+                  <div class="input-birthday_container">
+                    <input maxlength="2" class="xShort-input" type="number" name="day" id="day" placeholder="dd" required>
+                    <input class="xShort-input" type="number" name="mes" id="mm" placeholder="mm" required>
+                    <input class="xShort-input" type="number" name="año" id="aaaa" placeholder="aaaa" required>
+                  </div>
+                </div>
+            </form>
+            <div class="btn-container">
+              <button data-close-button class="btn-success">Finalizar</button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div id="overlay"></div>
+
+        <div class="modal modal-deposit" id="modal2">
+          <div class="modal-header">
+            <div class="title">Deposite fondos en su cuenta</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body_deposit">
+              <div class="deposit-amount">
+                <select name="" id="">
+                  <div class="divisa-options">
+                    <option class="divisa-option" value="">USD</option>
+                    <option class="divisa-option" value="">EUR</option>
+                    <option class="divisa-option" value="">GBP</option>
+                    <option class="divisa-option" value="">AUD</option>
+                  </div>
+                </select>
+                <div >
+                  <span class="symbol-container">$</span>
+                  <input type="number" name="" id="" >
+                </div>
+              </div>
+              <div class="card-selector">
+                <select class="card-opt" name="cards" id="">
+                    <option value="debitoCredito">Visa/Mastercard</option>
+                    <option value="debitoCredito">Transferencia Bancaria</option>
+                    <option value="debitoCredito">Binance</option>
+                    <option value="debitoCredito">Billetera Electrñonica</option>
+                    <option value="debitoCredito">Wester Unión</option>
+                  </select>
+              </div>
+              <div class="card-info">
+                <div class="card-number">
+                  <input type="number" name="" id="" placeholder="Numero de tarjeta">
+                  <input maxlength="4" type="number" name="" id="" placeholder="MM/AA">
+                  <input type="number" name="" id="" placeholder="CVV">
+                </div>
+                <div class="card-name">
+                  <input type="text" name="" id="" placeholder="Nombres">
+                  <input type="text" name="" id="" placeholder="Apellidos">
+                </div>
+              </div>
+              <span><b>Nota:</b> Esta tarjeta debe petenecerle y estar a su nombre</span>
+          </div>
+          <div class="modal-footer_deposit">
+            <button class="btn-success">Depósito</button>
+          </div>
+        </div>
+        <div id="overlay"></div>
+
+        <div class="modal" id="modal3">
+          <div class="modal-header">
+            <div class="title">Retirar</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-content">
+            <div class="modal-body_text">
+              Lo sentimos, pero su cuenta no tiene fondos suficientes para retirar. Para obtener más información y desglose, póngase en contacto con atención al cliente.
+            </div>
+            <div class="modal-body founds">
+              <div class="founds-row first">
+                <div class="founds-title">Comisión</div>
+                <div class="founds-amount">$0.00</div>
+              </div>
+              <div class="founds-row">
+                <div class="founds-title">Fondos disponibles para retirar</div>
+                <div class="founds-amount">$0.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button data-close-button class="btn-success">Entiendo</button>
+          </div>
+          
+        </div>
+        <div id="overlay"></div>
+        <section>
+<!-- TradingView Widget END -->
+        </section>
+
+        <section class="etoro-club">
+          <div class="club-info">
+            <div class="club-column">
+              <h2 class="club-title">¿Qué es el <strong>Club eToro?</strong></h2>
+              <p class="club-content">El Club eToro fue creado como una forma de mostrar agradecimiento a nuestros valiosos clientes. La afiliación se divide en cinco niveles, cada uno con sus propias ventajas y características exclusivas. Cuanto más alto sea el nivel de afiliación, más ofertas tendrá a su disposición.</p>
+            </div>
+            <div class="club-column">
+              <img src="img/club-img.webp" alt="" class="club-img">
+            </div>
+          </div>
+        </section>
+
+        <section class="etoro-club etoro-club-light">
+          <div class="club-info club-info_precios">
+            <div class="club-socio">
+              <h2 class="club-title">¿Como puedo <strong>hacerme socio?</strong></h2>
+              <p class="club-content">No es necesario solicitar la afiliación al Club eToro. Todos los usuarios de todo comienzan en el nivel Bronce, que no forma parte del Club. Una vez que cumpla los siguientes requisitos de capital, se le concederá automáticamente* acceso al nivel correspondiente:</p>
+            </div>
+            <div class="precios">
+              <div class="valor-img">
+                <img src="/img/silver.webp" alt="">
+              </div>
+            <div class="valor-img">
+              <img src="/img/gold.webp" alt="">
+            </div>
+            <div class="valor-img">
+              <img src="/img/platinum.webp" alt="">
+            </div>
+            <div class="valor-img">
+              <img src="/img/platinum-1.webp" alt="">
+            </div>
+            <div class="valor-img">
+              <img src="/img/diamond.webp" alt="">
+            </div>
+          </div>
+          </div>
+        </section>
+        <section class="levels-container">
+          <div class="content-table">
+          <div class="section-table title-table">
+            <h1>Elija el nivel que sea apropiado para usted</h1>
+          </div>
+          <div class="table-container table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Club</th>
+                  <th>SILVER</th>
+                  <th>GOLD</th>
+                  <th>PLATINUM</th>
+                  <th>PLATINUM+</th>
+                  <th>DIAMOND</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Saldo de nivel requerido</td>
+                  <td>$5,000</td>
+                  <td>$10,000</td>
+                  <td>$25,000</td>
+                  <td>$50,000</td>
+                  <td>$250,000</td>
+                </tr>
+                <tr>
+                  <td>Panel del Club</td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Gestor de cuentas especializado</td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Webinario en vivo</td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Smart Portfolios exclusivos basados en datos</td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Tarjeta de Débito exclusiva (próximamente)</td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Descuento o exención para el formulario de declaración de la renta</td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Staking» de Criptomonedas</td>
+                  <td>85%</td>
+                  <td>85%</td>
+                  <td>85%</td>
+                  <td>90%</td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td>Informe fiscal de eToro</td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Delta PRO Investment Tracker</td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>WhatsApp–Canal de atención directa con gestores de cuentas</td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Descuento o exención de las comisiones por conversión de divisas</td>
+                  <td>25%</td>
+                  <td>25%</td>
+                  <td>50%</td>
+                  <td>50%</td>
+                  <td>100%</td>
+                </tr>
+                <tr>
+                  <td>Interés sobre Saldo</td>
+                  <td></td>
+                  <td>2%</td>
+                  <td>2.4%</td>
+                  <td>5%</td>
+                  <td>5.3%</td>
+                </tr>
+                <tr>
+                  <td>Sin comisiones por retirada</td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Plataforma de análisis e investigación Trading Central</td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Suscripción a Wall Street Journal</td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Invitaciones a eventos del sector de primer nivel</td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Seguro gratuito de hasta 1 millón de euros o dólares australianos</td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>El Confidencial</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Entradas para eventos deportivos seleccionados</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Acceso a destacadas publicaciones financieras digitales.</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Acceso «premium» a destacadas publicaciones financieras digitales.</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Invitación a un evento para miembros Diamond</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Programa de devolución de efectivo en criptomonedas</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+                <tr>
+                  <td>Airport Priority Pass</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><i class="fa-solid fa-check" style="color: #13c636;"></i></td>
+                </tr>
+              </tbody>
+            </table>
+            <p><em>*El seguro cubre las reclamaciones de los Clientes Elegibles (de eToro (Europe) Ltd. y eToro AUS Capital Limited) que sufran pérdidas debido al improbable caso de insolvencia de eToro y en caso de Evento de Mala Conducta (según se define en la Póliza aplicable).<br>
+              El seguro cubre: (i) hasta 1 millón de euros o AUD (dependiendo de la entidad regulatoria); (ii) hasta el límite agregado adquirido por eToro; y (iii) sujeto a una cantidad en exceso (según se defina en la póliza aplicable)</em>.</p>
+          </div>
+        </div>
+        </section>
+    </main>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
