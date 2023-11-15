@@ -1010,7 +1010,6 @@ input[type="radio"]:checked + label {
 
 .precios{
   margin: 0 auto;
-  max-width: none;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1018,10 +1017,14 @@ input[type="radio"]:checked + label {
 .valor-img{
   margin: 0 5px;
 }
-.valor-img img{
-  width: 100%;
-}
 
+
+@media screen and (min-width: 1024px) {
+  .valor-img img{
+    width: 100%;
+  }
+
+}
 @media screen and (max-width: 1024px) {
   .etoro-club{
     padding-top: 10px;
@@ -1039,8 +1042,10 @@ input[type="radio"]:checked + label {
     padding: 35px 0 40px;
   }
   .precios{
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    overflow: scroll;
+  }
+  .valor-img img {
+    max-width: 191px;
   }
 }
 
